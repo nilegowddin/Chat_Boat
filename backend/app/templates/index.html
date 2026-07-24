@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>DocChat AI</title>
+
+    <link rel="stylesheet"
+          href="/static/css/style.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+          rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <i class="fa-solid fa-robot"></i>
+
+            <span>DocChat</span>
+
+        </div>
+
+        <button id="newChatBtn"
+                class="new-chat">
+
+            <i class="fa-solid fa-plus"></i>
+
+            New Chat
+
+        </button>
+
+        <div class="history-title">
+
+            Recent Chats
+
+        </div>
+
+        <div id="history"
+             class="history">
+
+        </div>
+
+        <div class="user">
+
+            <div class="avatar">
+
+                D
+
+            </div>
+
+            <div>
+
+                <div class="username">
+
+                    Dinesh
+
+                </div>
+
+                <div class="plan">
+
+                    Free
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+    <!-- Main -->
+
+    <main class="main">
+
+        <div id="chatWindow"
+             class="chat-window">
+
+            <div class="welcome">
+
+                <h1>DocChat AI</h1>
+
+                <p>
+
+                    Upload a PDF and ask questions.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- Input -->
+
+        <div class="input-area">
+
+            <label for="fileInput"
+                   class="upload-btn">
+
+                <i class="fa-solid fa-paperclip"></i>
+
+            </label>
+
+            <input type="file"
+                   id="fileInput"
+                   accept=".pdf"
+                   hidden>
+
+            <textarea
+                    id="message"
+                    placeholder="Ask anything..."></textarea>
+
+            <button id="sendBtn">
+
+                <i class="fa-solid fa-arrow-up"></i>
+
+            </button>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="/static/js/app.js"></script>
+
+</body>
+
+</html>
